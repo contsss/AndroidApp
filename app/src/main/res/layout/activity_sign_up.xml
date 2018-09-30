@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignActivity">
+
+    <EditText
+        android:id="@+id/etSignUpId"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="아이디"
+        app:layout_constraintBottom_toTopOf="@+id/etSignUpPassword"
+        app:layout_constraintEnd_toStartOf="@+id/btnCheck"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etSignUpPassword"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        app:layout_constraintBottom_toTopOf="@+id/etSignUpPasswordCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etSignUpPasswordCheck"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="비밀번호 확인"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="insert"
+        android:text="회원가입"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:text="중복확인"
+        app:layout_constraintBottom_toTopOf="@+id/etSignUpPassword"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="313dp"
+        android:layout_height="189dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/etSignUpId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+</android.support.constraint.ConstraintLayout>

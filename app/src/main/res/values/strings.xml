@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NoDoubleContract</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="btn_buyer">구매자</string>
+    <string name="btn_seller">판매자</string>
+    <string name="search_address">주소 검색</string>
+    <string name="search">검색</string>
+    <string name="zip">우편번호</string>
+    <string name="address">주소</string>
+    <string name="address_detail">상세 주소</string>
+    <string name="title_activity_list_for_sale">ListForSaleActivity</string>
+</resources>
